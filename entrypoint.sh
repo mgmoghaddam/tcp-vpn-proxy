@@ -29,7 +29,7 @@ sed -e "/^#/d"\
     -e "s|\${V2_Path}|${V2_Path}|g"\
     -e "s|\${QR_Path}|${QR_Path}|g"\
     -e "$s"\
-    /conf/nginx_ss.conf > /path/to/conf/ss.conf 
+    /conf/nginx_ss.conf > /etc/nginx/conf.d/ss.conf
 
 if [ "${Domain}" = "no" ]; then
   echo "TCP VPN Proxy"
